@@ -5,9 +5,10 @@ import java.awt.event.ActionListener;
 
 public class CalculatorForm extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CalculatorForm
-     */
+    private double firstNumber;
+    private double secondNumber;
+    private String operator;
+
     public CalculatorForm() {
         initComponents();
     }
@@ -234,9 +235,8 @@ public class CalculatorForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnOne, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
                     .addComponent(btnTwo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnThree, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnStar)))
+                    .addComponent(btnStar)
+                    .addComponent(btnThree, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -250,186 +250,192 @@ public class CalculatorForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSevenActionPerformed
-             btnSeven.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "7");
-    }
-});
+    btnSeven.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnSevenActionPerformed(evt);
+        }
+        
+        private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "7");
+        }
+    });
     }//GEN-LAST:event_btnSevenActionPerformed
 
     private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEightActionPerformed
-             btnEight.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "8");
-    }
-});
+    btnEight.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnEightActionPerformed(evt);
+        }
+        
+        private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "8");
+        }
+    });
     }//GEN-LAST:event_btnEightActionPerformed
 
     private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
-             btnZero.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "0");
-    }
-});
+    btnZero.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnZeroActionPerformed(evt);
+        }
+        
+        private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "0");
+        }
+
+    });
+    
+    
     }//GEN-LAST:event_btnZeroActionPerformed
 
     private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiveActionPerformed
-             btnFive.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "5");
-    }
-});
+    btnFive.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnFiveActionPerformed(evt);
+        }
+        
+        private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "5");
+        }
+    });
     }//GEN-LAST:event_btnFiveActionPerformed
 
     private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
-            btnOne.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "1");
-    }
-});
-     
+    btnOne.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnOneActionPerformed(evt);
+        }
+        
+        private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "1");
+        }
+
+    });
+
     }//GEN-LAST:event_btnOneActionPerformed
 
     private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
-        btnTwo.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "2");
-    }
-});
+    btnTwo.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnTwoActionPerformed(evt);
+        }
+        
+        private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "2");
+        }
+    });
     }//GEN-LAST:event_btnTwoActionPerformed
 
     private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThreeActionPerformed
-            btnThree.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "3");
-    }
-});
+    btnThree.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnThreeActionPerformed(evt);
+        }
+        
+        private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "3");
+        }
+    });
     }//GEN-LAST:event_btnThreeActionPerformed
 
     private void btnFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFourActionPerformed
-            btnFour.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "4");
-    }
-});
+    btnFour.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnFourActionPerformed(evt);
+        }
+        
+        private void btnFourActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "4");
+        }
+    });
     }//GEN-LAST:event_btnFourActionPerformed
 
     private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSixActionPerformed
-             btnSix.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "6");
-    }
-});
+    btnSix.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnSixActionPerformed(evt);
+        }
+        
+        private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "6");
+        }
+    });
     }//GEN-LAST:event_btnSixActionPerformed
 
     private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNineActionPerformed
-             btnNine.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText(txtDisplay.getText() + "9");
-    }
-});
+    btnNine.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnNineActionPerformed(evt);
+        }
+        
+        private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {
+            txtDisplay.setText(txtDisplay.getText() + "9");
+        }
+    });
     }//GEN-LAST:event_btnNineActionPerformed
 
     private void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusActionPerformed
-        
-
-        btnPlus.addActionListener(new ActionListener() {
-            double firstNumber, secondNumber;
-            String operator;
-    public void actionPerformed(ActionEvent e) {
         firstNumber = Double.parseDouble(txtDisplay.getText());
         operator = "+";
-        txtDisplay.setText("");
-    }
-});
+        txtDisplay.setText(""); // Clear the display for the next number
     }//GEN-LAST:event_btnPlusActionPerformed
 
     private void btnMinersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinersActionPerformed
-        btnMiners.addActionListener(new ActionListener() {
-            double firstNumber, secondNumber;
-            String operator;
-    public void actionPerformed(ActionEvent e) {
         firstNumber = Double.parseDouble(txtDisplay.getText());
         operator = "-";
-        txtDisplay.setText("");
-    }
-});
+        txtDisplay.setText(""); // Clear the display for the next number
     }//GEN-LAST:event_btnMinersActionPerformed
 
     private void btnStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStarActionPerformed
-        btnStar.addActionListener(new ActionListener() {
-            double firstNumber, secondNumber;
-            String operator;
-    public void actionPerformed(ActionEvent e) {
         firstNumber = Double.parseDouble(txtDisplay.getText());
         operator = "*";
-        txtDisplay.setText("");
-    }
-});
+        txtDisplay.setText(""); // Clear the display for the next number    
     }//GEN-LAST:event_btnStarActionPerformed
 
     private void btnDevisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevisionActionPerformed
-        btnDevision.addActionListener(new ActionListener() {
-            double firstNumber, secondNumber;
-            String operator;
-    public void actionPerformed(ActionEvent e) {
         firstNumber = Double.parseDouble(txtDisplay.getText());
         operator = "/";
-        txtDisplay.setText("");
-    }
-});
+        txtDisplay.setText(""); // Clear the display for the next number
     }//GEN-LAST:event_btnDevisionActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
-       btnEqual.addActionListener(new ActionListener() {
-            double firstNumber, secondNumber;
-            String operator;
-    public void actionPerformed(ActionEvent e) {
-        secondNumber = Double.parseDouble(txtDisplay.getText());
+    secondNumber = Double.parseDouble(txtDisplay.getText());
+    double result = 0;
 
-        double result = 0;
-        switch (operator) {
-            case "+":
-                result = firstNumber + secondNumber;
-                break;
-            case "-":
-                result = firstNumber - secondNumber;
-                break;
-            case "*":
-                result = firstNumber * secondNumber;
-                break;
-            case "/":
-                if (secondNumber != 0) {
-                    result = firstNumber / secondNumber;
-                } else {
-                    txtDisplay.setText("Error");
-                    return;
-                }
-                break;
-        }
-
-        txtDisplay.setText(String.valueOf(result));
+    switch (operator) {
+        case "+":
+            result = firstNumber + secondNumber;
+            break;
+        case "-":
+            result = firstNumber - secondNumber;
+            break;
+        case "*":
+            result = firstNumber * secondNumber;
+            break;
+        case "/":
+            if (secondNumber != 0) {
+                result = firstNumber / secondNumber;
+            } else {
+                txtDisplay.setText("Error"); // Handle division by zero
+                return;
+            }
+            break;
     }
-});
+
+    txtDisplay.setText(String.valueOf(result));
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
-        btnClear.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
-        txtDisplay.setText("");
-    }
-});
-
+    txtDisplay.setText("");
+    firstNumber = 0;
+    secondNumber = 0;
+    operator = "";
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalActionPerformed
-        btnDecimal.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent e) {
         if (!txtDisplay.getText().contains(".")) {
-            txtDisplay.setText(txtDisplay.getText() + ".");
-        }
-    }
-});
+                txtDisplay.setText(txtDisplay.getText() + ".");
+            }
     }//GEN-LAST:event_btnDecimalActionPerformed
 
     /**
